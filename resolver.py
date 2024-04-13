@@ -20,6 +20,5 @@ class Resolver:
     def compute_mean(self):
         return np.mean(self.xs)
 
-    def compute_modal(self):
-        index = self.absolute_frequency.index(max(self.absolute_frequency))
-        return self.xs[index]
+    def compute_mode(self):
+        return stats.mode(self.xs)[0]

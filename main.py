@@ -13,11 +13,10 @@ def main():
     xs = get_input("Insert the modality:", length)
     
     resolver = Resolver(xs)
-
-    print(f"Mean: {resolver.compute_mean()}")
     print(f"Absolute frequencies: {resolver.get_absolute_frequencies()}")
     print(f"Relative frequencies: {resolver.get_relative_frequencies()}")
-
+    print(f"Mean: {resolver.compute_mean()}")
+    print(f"Mode: {resolver.compute_mode()}")
 
 if __name__ == '__main__':
     main()
